@@ -22,11 +22,11 @@ class ViewController: UIViewController {
                 break
             }else{
                 var checkPrime = false
-                for i in primeList{
+                for i in primeList {
                     if newPrime%i == 0{
                         break
                     }else{
-                        if newPrime/i < i {
+                        if newPrime < i * i {
                             checkPrime = true
                         }
                     }
@@ -44,14 +44,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        findAllPrime(ranNum: 999999)
+        findAllPrime(ranNum: 499999)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
